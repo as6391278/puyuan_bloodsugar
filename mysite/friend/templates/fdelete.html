@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>刪除朋友</title>
+</head>
+<body>
+    <h1>刪除朋友</h1>
+    <form action="/friend/fdelete/" enctype="multipart/form-data" method="post">
+        {% csrf_token %} 
+        <label for="user_name">名字:</label>
+        <input type="text" name="user_name"><br><br>
+        <input type="submit" value="提交">
+
+    </form>
+</body>
+</html>

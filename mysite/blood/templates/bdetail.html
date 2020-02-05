@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>所有使用者</title>
+</head>
+<body>
+    <h1>使用者列表</h1>
+    {% for user in list_user %}
+        <h2>{{ user.user_name }}</h2>
+        <h2>{{ user.blood_high}}</h2>
+        <h2>{{ user.blood_low}}</h2>
+
+    {% endfor %}
+</body>
+</html>

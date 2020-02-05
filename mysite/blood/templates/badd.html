@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加使用者血壓</title>
+</head>
+<body>
+    <h1>添加使用者血壓</h1>
+    <form action="/blood/badd/" enctype="multipart/form-data" method="post">
+        {% csrf_token %} 
+        <label for="user_name">名字:</label>
+        <input type="text" name="user_name"><br><br>
+        <label for="blood_high">高血壓:</label><br>
+        <input type="text" name="blood_high"><br><br>
+        <label for="blood_low">低血壓:</label><br>
+        <input type="text" name="blood_low"><br><br>
+        <input type="submit" value="提交">
+
+    </form>
+</body>
+</html>

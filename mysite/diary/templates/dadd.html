@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加日記</title>
+</head>
+<body>
+    <h1>添加日記</h1>
+    <form action="/diary/dadd/" enctype="multipart/form-data" method="post">
+        {% csrf_token %} 
+        <label for="date">日期:</label>
+        <input type="text" name="date"><br><br>
+        <label for="diary">日記:</label>
+        <input type="text" name="diary"><br><br>
+        <input type="submit" value="提交">
+
+    </form>
+</body>
+</html>
